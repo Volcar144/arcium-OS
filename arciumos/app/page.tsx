@@ -4,10 +4,8 @@ import "./globals.css"
 
 export default function Home() {
 	return (
-		<div className="">
-			<main className="bg-grey-50 h-full min-h-screen">
-				<StartWindow />
-			</main>
-		</div>
+		<main className="min-h-screen flex items-center justify-center bg-[url(/roses-wallpaper.gif)] bg-no-repeat bg-cover">
+			<StartWindow />
+		</main>
 	);
 }
