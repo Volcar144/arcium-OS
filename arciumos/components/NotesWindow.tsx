@@ -82,7 +82,7 @@ export default function NotesWindow({
 	if (!isOpen) return null;
 
 	return (
-		<Draggable nodeRef={nodeRef} handle=".drag-handle" cancel="button">
+		<Draggable nodeRef={nodeRef} handle=".drag-handle" cancel="button" defaultPosition={{ x: 220, y: 80 }}>
 			<div
 				ref={nodeRef}
 				style={{ zIndex }}
@@ -91,6 +91,7 @@ export default function NotesWindow({
 			>
 				<div
 					className="flex drag-handle flex-row justify-between bg-stone-300 h-8 w-full items-center px-4 rounded-t-md cursor-move select-none"
+					onMouseDown={onActivate}
 					style={{ touchAction: "none" }}
 				>
 					<span className="flex items-center gap-1">

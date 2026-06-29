@@ -33,7 +33,7 @@ export default function Home() {
 
 	const getZIndex = (windowId: string) => {
 		const idx = windowOrder.indexOf(windowId);
-		return idx >= 0 ? 10 + idx : 10;
+		return idx >= 0 ? 100 + idx : 100;
 	};
 
 	return (
