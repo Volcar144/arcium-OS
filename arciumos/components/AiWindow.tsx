@@ -47,8 +47,13 @@ export default function StartWindow({
 						<CircleXFillIcon />
 					</Button>
 				</div>
-				<div className="flex flex-col items-center justify-center gap-4 p-4">
-					
+				<div className="flex flex-col p-4">
+					<div id="user" className="w-1/2 h-2/2 inset-y-0 left-0">
+
+					</div>
+					<div id="ai">
+
+					</div>
 				</div>
 			</div>
 		</Draggable>
